@@ -1,0 +1,237 @@
+﻿<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="robots" content="index,follow">
+    <title>爆料网 - 爆料搜索 - 最新吃瓜爆料</title>
+    <meta name="description" content="爆料网爆料搜索，为您提供最新最全的吃瓜爆料引擎。输入网红、公司、纠纷关键词，极速定位一手的聊天记录、视频监控以及音视频线索。">
+    <meta name="keywords" content="爆料网,爆料搜索,最新爆料,吃瓜视频,黑料泄露,聊天记录实锤">
+    <link rel="canonical" href="/search/">
+    <link rel="stylesheet" href="static/css/style.css?v=20240315">
+    <script type="text/javascript" src="static/js/tz.js"></script>
+    <style>
+        .search-result-item {
+            transition: background 0.2s;
+        }
+        .search-result-item:hover {
+            background: #fffcfc;
+        }
+        .related-tag {
+            transition: all 0.2s;
+        }
+        .related-tag:hover {
+            background: #d90429 !important;
+            color: #fff !important;
+            transform: translateY(-2px);
+        }
+        :root {
+            --primary: #d90429;
+            --primary-dark: #c9184a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-area">
+                    <div class="logo-circle" style="background: linear-gradient(145deg, #d90429, #8d0801);">瓜</div>
+                    <div class="logo-text">
+                        <h1>爆料网</h1>
+                        <span>爆料搜索·吃瓜更专业</span>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-item">首页</a>
+                    <a href="video.html" class="nav-item">爆料视频</a>
+                    <a href="tv.html" class="nav-item">吃瓜TV</a>
+                    <a href="creator.html">爆料投稿</a>
+                    <a href="community.html">吃瓜社区</a>
+                    <a href="tools.html">黑料工具</a>
+                    <a href="search.html" class="nav-item active">搜索</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 面包屑 -->
+        <div class="breadcrumb" style="padding: 20px 0; color: #8d99ae; font-size: 14px;">
+            <a href="index.html" style="color: #d90429; text-decoration: none;">首页</a> &gt; 
+            <span style="color: #2b2d42;">爆料搜索引擎</span>
+        </div>
+
+        <!-- 搜索框区域 -->
+        <div class="search-area" style="margin: 20px 0 35px 0;">
+            <div class="search-wrapper" style="max-width: 720px; margin: 0 auto; background: #fff; border-radius: 60px; padding: 5px; box-shadow: 0 8px 25px rgba(0,0,0,0.08);">
+                <input type="text" id="searchInput" placeholder="请输入被爆料人物姓名、代号、所属公司或事件核心词..." value="百万网红翻车实录" style="flex: 1; border: none; padding: 16px 28px; font-size: 16px; outline: none; background: transparent; border-radius: 60px;">
+                <button onclick="handleSearch()" style="background: linear-gradient(145deg, #d90429, #c9184a); color: #fff; border: none; padding: 12px 42px; border-radius: 50px; font-weight: 600; font-size: 15px; cursor: pointer; margin-right: 6px;">全网爆料搜索</button>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <span style="color: #8d99ae; font-size: 14px;">热门吃瓜词组：</span>
+                <a href="javascript:void(0)" onclick="quickSearch('某音王某私信曝光')" style="color: #d90429; margin: 0 12px; font-size: 14px; text-decoration: none;">某音网红私聊</a>
+                <a href="javascript:void(0)" onclick="quickSearch('知名主播选品造假')" style="color: #d90429; margin: 0 12px; font-size: 14px; text-decoration: none;">带货虚假宣传</a>
+                <a href="javascript:void(0)" onclick="quickSearch('著名战队语音')" style="color: #d90429; margin: 0 12px; font-size: 14px; text-decoration: none;">战队矛盾录音</a>
+                <a href="javascript:void(0)" onclick="quickSearch('高校反转')" style="color: #d90429; margin: 0 12px; font-size: 14px; text-decoration: none;">表白墙反转剧</a>
+            </div>
+        </div>
+
+        <!-- 搜索结果区域 -->
+        <div class="search-results" style="background: #fff; border-radius: 32px; padding: 32px; margin-bottom: 45px; box-shadow: 0 5px 15px rgba(0,0,0,0.03);">
+            <div style="margin-bottom: 28px; padding-bottom: 15px; border-bottom: 2px solid #f0f0f0;">
+                <h3 style="font-size: 20px; margin-bottom: 6px;">“百万网红翻车实录” 爆料搜索结果</h3>
+                <p style="color: #8d99ae; font-size: 14px;">已在爆料网找到 580 个高可信度实锤黑料档案</p>
+            </div>
+
+            <div class="video-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px;">
+                <!-- 搜索结果 -->
+                <article class="search-result-item video-item" style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.05); cursor: pointer;" onclick="playVideo('百万户外网红策划摆拍车祸遭路人拆穿', '打假铁拳老陈')">
+                    <div class="thumbnail" style="position: relative; height: 165px;">
+                        <img src="https://picsum.photos/id/20/400/225" style="width: 100%; height: 100%; object-fit: cover;" alt="摆拍现场曝光" loading="lazy">
+                        <div class="play-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s;">
+                            <div class="play-icon" style="width: 48px; height: 48px; background: rgba(255,255,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center;"></div>
+                        </div>
+                        <span class="video-duration" style="position: absolute; bottom: 12px; right: 12px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 10px; border-radius: 6px; font-size: 11px;">12:05</span>
+                    </div>
+                    <div class="video-info" style="padding: 14px;">
+                        <h4 style="font-size: 15px; font-weight: 600; margin-bottom: 10px; line-height: 1.4;">千万级网红策划摆拍爱心扶贫 现场发放现金录完当即收回曝光</h4>
+                        <div class="video-meta" style="display: flex; align-items: center; justify-content: space-between; color: #8d99ae; font-size: 12px;">
+                            <div class="uploader" style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://picsum.photos/id/64/24/24" style="width: 24px; height: 24px; border-radius: 50%;" alt="老陈头像">
+                                <span>打假老陈</span>
+                            </div>
+                            <span>35.8w次吃瓜</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="search-result-item video-item" style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.05); cursor: pointer;" onclick="playVideo('某美妆网红虚假带货出厂实地调查', '爆料人-王叔')">
+                    <div class="thumbnail" style="position: relative; height: 165px;">
+                        <img src="https://picsum.photos/id/104/400/225" style="width: 100%; height: 100%; object-fit: cover;" alt="美妆代工调查" loading="lazy">
+                        <div class="play-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; opacity: 0;"></div>
+                        <span class="video-duration" style="position: absolute; bottom: 12px; right: 12px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 10px; border-radius: 6px; font-size: 11px;">18:12</span>
+                    </div>
+                    <div class="video-info" style="padding: 14px;">
+                        <h4 style="font-size: 15px; font-weight: 600; margin-bottom: 10px;">宣称国外大牌其实产自小镇三无工厂 某美妆百万带货博主实录</h4>
+                        <div class="video-meta" style="display: flex; align-items: center; justify-content: space-between; color: #8d99ae; font-size: 12px;">
+                            <div class="uploader" style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://picsum.photos/id/64/24/24" style="width: 24px; height: 24px; border-radius: 50%;" alt="王叔头像">
+                                <span>爆料人-王叔</span>
+                            </div>
+                            <span>22.5w次吃瓜</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="search-result-item video-item" style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.05); cursor: pointer;" onclick="playVideo('知名吃播深夜狂吐后续真伪核对', '反假吃斗士')">
+                    <div class="thumbnail" style="position: relative; height: 165px;">
+                        <img src="https://picsum.photos/id/26/400/225" style="width: 100%; height: 100%; object-fit: cover;" alt="假吃证据" loading="lazy">
+                        <div class="play-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; opacity: 0;"></div>
+                        <span class="video-duration" style="position: absolute; bottom: 12px; right: 12px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 10px; border-radius: 6px; font-size: 11px;">08:50</span>
+                    </div>
+                    <div class="video-info" style="padding: 14px;">
+                        <h4 style="font-size: 15px; font-weight: 600; margin-bottom: 10px;">狂吃十公斤海鲜背后的垃圾桶实拍 吃播假吃呕吐证据链已固定</h4>
+                        <div class="video-meta" style="display: flex; align-items: center; justify-content: space-between; color: #8d99ae; font-size: 12px;">
+                            <div class="uploader" style="display: flex; align-items: center; gap: 8px;">
+                                <img src="https://picsum.photos/id/29/24/24" style="width: 24px; height: 24px; border-radius: 50%;" alt="斗士">
+                                <span>反假吃斗士</span>
+                            </div>
+                            <span>15.9w次吃瓜</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 分页 -->
+            <div style="display: flex; justify-content: center; gap: 12px; margin-top: 40px;">
+                <a href="javascript:void(0)" style="background: linear-gradient(145deg, #d90429, #c9184a); color: #fff; padding: 10px 18px; border-radius: 50px; text-decoration: none; font-size: 14px;">1</a>
+                <a href="javascript:void(0)" style="background: #f0f0f0; color: #2b2d42; padding: 10px 18px; border-radius: 50px; text-decoration: none; font-size: 14px;" onclick="loadMore()">2</a>
+                <a href="javascript:void(0)" style="background: #f0f0f0; color: #2b2d42; padding: 10px 18px; border-radius: 50px; text-decoration: none; font-size: 14px;" onclick="loadMore()">下一页</a>
+            </div>
+
+            <!-- 相关搜索 -->
+            <div style="margin-top: 42px; padding-top: 30px; border-top: 1px solid #eee;">
+                <h4 style="margin-bottom: 18px; font-size: 16px;">吃瓜网络关联推荐</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                    <a href="javascript:void(0)" onclick="quickSearch('网红退网道歉声明')" class="related-tag" style="background: #f5f5f5; padding: 8px 22px; border-radius: 40px; color: #2b2d42; text-decoration: none; font-size: 14px; transition: all 0.2s;">网红致歉声明书</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('主播漏税曝光')" class="related-tag" style="background: #f5f5f5; padding: 8px 22px; border-radius: 40px; color: #2b2d42; text-decoration: none; font-size: 14px;">大主播偷税线索</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('电竞战队基地现场冲突')" class="related-tag" style="background: #f5f5f5; padding: 8px 22px; border-radius: 40px; color: #2b2d42; text-decoration: none; font-size: 14px;">战队后台爆发冲突</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h4>爆料网</h4>
+                    <p>爆料网 - 爆料搜索 - 每日最新吃瓜爆料首发阵地。所有爆料搜索结果均经过人脑校验与交叉比对。</p>
+                </div>
+                <div class="footer-links">
+                    <h5>高频爆料搜索</h5>
+                    <a href="javascript:void(0)" onclick="quickSearch('聊天截图真伪')">聊天截图还原</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('私生活混乱爆料')">网红私密情感</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('公司高管裁员录音')">高管出格语录</a>
+                </div>
+                <div class="footer-links">
+                    <h5>吃瓜新视角</h5>
+                    <a href="javascript:void(0)" onclick="location.href='trending.html'">爆料风向标</a>
+                    <a href="javascript:void(0)" onclick="location.href='recommend.html'">热门研判推荐</a>
+                </div>
+                <div class="footer-links">
+                    <h5>吃瓜指南</h5>
+                    <a href="javascript:void(0)" onclick="location.href='search-help.html'">侵权资料下架程序</a>
+                    <a href="javascript:void(0)" onclick="location.href='feedback.html'">虚假线索排除指引</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2020-<script>document.write(new Date().getFullYear())</script> 爆料网 ｜ 爆料搜索 ｜ 确保信息中立，还原网络真相</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function getUrlParam(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURIComponent(r[2]);
+        return null;
+    }
+    
+    function handleSearch() {
+        var keyword = document.getElementById('searchInput').value.trim();
+        if (keyword) {
+            window.location.href = 'search.html?q=' + encodeURIComponent(keyword);
+        } else {
+            var inputEl = document.getElementById('searchInput');
+            inputEl.placeholder = '输入人物、事件名称方可搜索...';
+            inputEl.style.border = '1px solid #d90429';
+            setTimeout(function() {
+                inputEl.style.border = '';
+                inputEl.placeholder = '搜视频、找博主、看热门...';
+            }, 1500);
+        }
+    }
+    
+    function quickSearch(keyword) {
+        window.location.href = 'search.html?q=' + encodeURIComponent(keyword);
+    }
+    
+    function playVideo(title, author) {
+        window.location.href = 'video-detail.html?title=' + encodeURIComponent(title);
+    }
+    
+    function loadMore() {
+        alert('更多保密库搜索数据加载中，请稍后重试...');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var searchKeyword = getUrlParam('q');
+        if (searchKeyword) {
+            document.getElementById('searchInput').value = searchKeyword;
+        }
+    });
+    </script>
+</body>
+</html>

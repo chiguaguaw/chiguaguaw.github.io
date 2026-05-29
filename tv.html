@@ -1,0 +1,226 @@
+﻿<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="robots" content="index,follow">
+    <title>吃瓜天堂- 吃瓜天堂的官方频道</title>
+    <meta name="description" content="吃瓜天堂官方TV频道，24小时不间断为您直播还原各大网络热点事件。提供当事人连线质问、深度实锤档案解读、电竞与网红八卦前线揭秘。">
+    <meta name="keywords" content="吃瓜天堂,吃瓜TV,爆料直播,当事人对线,黑料研判,官方频道">
+    <link rel="canonical" href="/tv/">
+    <link rel="stylesheet" href="static/css/style.css?v=20240315">
+    <script type="text/javascript" src="static/js/tz.js"></script>
+    <style>
+        .live-badge-pulse {
+            animation: pulse-live 1.2s infinite;
+        }
+        @keyframes pulse-live {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.65; }
+        }
+        .channel-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .channel-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+        }
+        :root {
+            --primary: #d90429;
+            --primary-dark: #c9184a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-area">
+                    <div class="logo-circle" style="background: linear-gradient(145deg, #d90429, #8d0801);">瓜</div>
+                    <div class="logo-text">
+                        <h1>吃瓜天堂</h1>
+                        <span>官方直播频道</span>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-item">首页</a>
+                    <a href="video.html" class="nav-item">爆料视频</a>
+                    <a href="tv.html" class="nav-item active">吃瓜TV</a>
+                    <a href="creator.html">爆料投稿</a>
+                    <a href="community.html">吃瓜社区</a>
+                    <a href="tools.html">黑料工具</a>
+                    <a href="search.html" class="nav-item">搜索</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 面包屑 -->
+        <div style="padding: 20px 0; color: #8d99ae; font-size: 14px;">
+            <a href="index.html" style="color: #d90429; text-decoration: none;">首页</a> &gt; 
+            <span style="color: #2b2d42;">吃瓜天堂TV</span>
+        </div>
+
+        <!-- 头部 -->
+        <div style="background: linear-gradient(145deg, #d90429, #8d0801); border-radius: 32px; padding: 48px 40px; color: #fff; margin-bottom: 35px;">
+            <h1 style="font-size: 42px; margin-bottom: 12px; font-weight: 700;">吃瓜天堂官方频道</h1>
+            <p style="font-size: 18px; opacity: 0.92; max-width: 550px;">这里是全网吃瓜群众的天堂。独家音视频实锤档案发布、当事人网络交锋对质、全天24小时播音研判热点。</p>
+            <div style="display: flex; gap: 16px; margin-top: 28px;">
+                <span style="background: rgba(255,255,255,0.2); padding: 6px 22px; border-radius: 40px; font-size: 13px;">🎬 当事人爆料连线</span>
+                <span style="background: rgba(255,255,255,0.2); padding: 6px 22px; border-radius: 40px; font-size: 13px;">🔴 24h热点播报</span>
+                <span style="background: rgba(255,255,255,0.2); padding: 6px 22px; border-radius: 40px; font-size: 13px;">⭐ 爆料核实档案</span>
+            </div>
+        </div>
+
+        <!-- 正在直播 -->
+        <div class="section-header">
+            <h3>🔴 正在直播对线中</h3>
+            <a href="javascript:void(0)" class="view-all" onclick="viewAllLives()" style="color: #d90429;">所有直播间 →</a>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 48px;">
+            <div class="live-card channel-card" style="background: #fff; border-radius: 24px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); cursor: pointer;" onclick="enterLive('某网红夫妻财产分割质询')">
+                <div style="position: relative; height: 200px;">
+                    <img src="https://picsum.photos/id/64/400/225" style="width: 100%; height: 100%; object-fit: cover;" alt="夫妻互撕现场" loading="lazy">
+                    <span class="live-badge-pulse" style="position: absolute; top: 14px; left: 14px; background: #ff4444; color: #fff; padding: 5px 14px; border-radius: 30px; font-size: 12px; font-weight: 600;">🔴 连线质证中</span>
+                    <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.7); color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 12px;">5.2w人围观</span>
+                </div>
+                <div style="padding: 18px;">
+                    <h4 style="margin-bottom: 6px; font-size: 17px;">千万粉丝网红夫妻线上对质</h4>
+                    <p style="color: #8d99ae; font-size: 13px; margin-bottom: 12px;">实时出示公司出资明细，双方当事人同台辩论</p>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="https://picsum.photos/id/64/28/28" style="width: 28px; height: 28px; border-radius: 50%;" alt="主播">
+                        <span style="font-size: 14px;">爆料王叔现场主持</span>
+                    </div>
+                </div>
+            </div>
+            <div class="live-card channel-card" style="background: #fff; border-radius: 24px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); cursor: pointer;" onclick="enterLive('电竞教练违约风波连线')">
+                <div style="position: relative; height: 200px;">
+                    <img src="https://picsum.photos/id/27/400/225" style="width: 100%; height: 100%; object-fit: cover;" alt="电竞爆料" loading="lazy">
+                    <span class="live-badge-pulse" style="position: absolute; top: 14px; left: 14px; background: #ff4444; color: #fff; padding: 5px 14px; border-radius: 30px; font-size: 12px; font-weight: 600;">🔴 电竞研判</span>
+                    <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.7); color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 12px;">3.5w人围观</span>
+                </div>
+                <div style="padding: 18px;">
+                    <h4 style="margin-bottom: 6px; font-size: 17px;">某王牌教练基地内部录音重听</h4>
+                    <p style="color: #8d99ae; font-size: 13px; margin-bottom: 12px;">业内资深经纪人分析此次解约违约合同真伪</p>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="https://picsum.photos/id/27/28/28" style="width: 28px; height: 28px; border-radius: 50%;" alt="主播">
+                        <span style="font-size: 14px;">电竞百晓生</span>
+                    </div>
+                </div>
+            </div>
+            <div class="live-card channel-card" style="background: #fff; border-radius: 24px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); cursor: pointer;" onclick="enterLive('每日爆料证据技术比对')">
+                <div style="position: relative; height: 200px;">
+                    <img src="https://picsum.photos/id/15/400/225" style="width: 100%; height: 100%; object-fit: cover;" alt="技术核对" loading="lazy">
+                    <span class="live-badge-pulse" style="position: absolute; top: 14px; left: 14px; background: #ff4444; color: #fff; padding: 5px 14px; border-radius: 30px; font-size: 12px; font-weight: 600;">🔴 真假核实</span>
+                    <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.7); color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 12px;">2.1w人围观</span>
+                </div>
+                <div style="padding: 18px;">
+                    <h4 style="margin-bottom: 6px; font-size: 17px;">聊天截图与转账流水的真假比对</h4>
+                    <p style="color: #8d99ae; font-size: 13px; margin-bottom: 12px;">技术流还原P图破绽，剔除假料</p>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="https://picsum.photos/id/29/28/28" style="width: 28px; height: 28px; border-radius: 50%;" alt="技术专家">
+                        <span style="font-size: 14px;">数字图像鉴定师</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 独家研判节目 -->
+        <div class="section-header">
+            <h3>⭐ 吃瓜天堂原创深度栏目</h3>
+            <a href="javascript:void(0)" class="view-all" onclick="viewOriginalShows()" style="color: #d90429;">全部精彩栏目 →</a>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-bottom: 48px;">
+            <div class="show-card" style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 5px 12px rgba(0,0,0,0.05); cursor: pointer;" onclick="playShow('网红背后的公关大戏')">
+                <img src="https://picsum.photos/id/20/400/200" style="width: 100%; height: 130px; object-fit: cover;" alt="公关分析" loading="lazy">
+                <div style="padding: 14px;">
+                    <h4 style="font-size: 15px; margin-bottom: 5px;">网红公关洗白套路拆解</h4>
+                    <p style="color: #8d99ae; font-size: 12px;">第5期 · 揭秘小作文背后的写手</p>
+                    <span style="display: inline-block; background: rgba(217,4,41,0.08); color: #d90429; padding: 3px 10px; border-radius: 20px; font-size: 11px; margin-top: 8px;">22.5w播放</span>
+                </div>
+            </div>
+            <div class="show-card" style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 5px 12px rgba(0,0,0,0.05); cursor: pointer;" onclick="playShow('电竞转会费大揭秘')">
+                <img src="https://picsum.photos/id/26/400/200" style="width: 100%; height: 130px; object-fit: cover;" alt="转会分析" loading="lazy">
+                <div style="padding: 14px;">
+                    <h4 style="font-size: 15px; margin-bottom: 5px;">战队黑幕合同大起底</h4>
+                    <p style="color: #8d99ae; font-size: 12px;">第12期 · “竞签”限制如何锁死选手</p>
+                    <span style="display: inline-block; background: rgba(217,4,41,0.08); color: #d90429; padding: 3px 10px; border-radius: 20px; font-size: 11px; margin-top: 8px;">18.2w播放</span>
+                </div>
+            </div>
+            <div class="show-card" style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 5px 12px rgba(0,0,0,0.05); cursor: pointer;" onclick="playShow('直播带货打假第一现场')">
+                <img src="https://picsum.photos/id/127/400/200" style="width: 100%; height: 130px; object-fit: cover;" alt="打假" loading="lazy">
+                <div style="padding: 14px;">
+                    <h4 style="font-size: 15px; margin-bottom: 5px;">假燕窝与假粉丝产业链</h4>
+                    <p style="color: #8d99ae; font-size: 12px;">第8期 · 实地暗访贴牌代工厂</p>
+                    <span style="display: inline-block; background: rgba(217,4,41,0.08); color: #d90429; padding: 3px 10px; border-radius: 20px; font-size: 11px; margin-top: 8px;">31.4w播放</span>
+                </div>
+            </div>
+            <div class="show-card" style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 5px 12px rgba(0,0,0,0.05); cursor: pointer;" onclick="playShow('高校黑料反转解密')">
+                <img src="https://picsum.photos/id/104/400/200" style="width: 100%; height: 130px; object-fit: cover;" alt="反转剧" loading="lazy">
+                <div style="padding: 14px;">
+                    <h4 style="font-size: 15px; margin-bottom: 5px;">小作文写手套路还原</h4>
+                    <p style="color: #8d99ae; font-size: 12px;">第3期 · 高校风波背后的扭曲事实</p>
+                    <span style="display: inline-block; background: rgba(217,4,41,0.08); color: #d90429; padding: 3px 10px; border-radius: 20px; font-size: 11px; margin-top: 8px;">14.5w播放</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h4>吃瓜天堂官方TV</h4>
+                    <p>吃瓜天堂 - 吃瓜天堂官方频道。用最客观的视角切入纷杂的网络舆论战场，还原事实，抵制恶意捏造。</p>
+                </div>
+                <div class="footer-links">
+                    <h5>TV频道指南</h5>
+                    <a href="javascript:void(0)" onclick="viewOriginalShows()">吃瓜大讲堂</a>
+                    <a href="javascript:void(0)" onclick="viewAllLives()">现场交锋连线直播</a>
+                    <a href="video.html">绝密线索实锤录像</a>
+                </div>
+                <div class="footer-links">
+                    <h5>爆料中心</h5>
+                    <a href="javascript:void(0)" onclick="visitCreator('第一狗仔')">官方首发合作线人</a>
+                    <a href="javascript:void(0)" onclick="visitCreator('爆料人-王叔')">爆料先锋</a>
+                </div>
+                <div class="footer-links">
+                    <h5>版权与法律</h5>
+                    <a href="javascript:void(0)" onclick="location.href='cooperation.html'">不实指控澄清流程</a>
+                    <a href="javascript:void(0)" onclick="location.href='copyright.html'">保护民营企业及隐私说明</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2020-<script>document.write(new Date().getFullYear())</script> 吃瓜天堂 ｜ 官方频道，记录真实，厘清黑白</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function viewAllLives() {
+        window.location.href = 'live.html';
+    }
+    
+    function enterLive(liveName) {
+        console.log('[连线研判] ' + liveName);
+        window.location.href = 'live-room.html?name=' + encodeURIComponent(liveName);
+    }
+    
+    function viewOriginalShows() {
+        window.location.href = 'original-shows.html';
+    }
+    
+    function playShow(showName) {
+        window.location.href = 'show-detail.html?name=' + encodeURIComponent(showName);
+    }
+    
+    function playVideo(title, author) {
+        window.location.href = 'video-detail.html?title=' + encodeURIComponent(title);
+    }
+    
+    function visitCreator(name) {
+        window.location.href = 'creator.html?uid=' + encodeURIComponent(name);
+    }
+    </script>
+</body>
+</html>

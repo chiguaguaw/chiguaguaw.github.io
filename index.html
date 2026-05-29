@@ -1,0 +1,568 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="robots" content="index,follow">
+    <title>吃瓜网黑料社-每日爆料跟新-吃瓜热门事不打烊</title>
+    <meta name="description" content="吃瓜网黑料社是国内知名的民间爆料与热点事件追踪平台，24小时不间断为您扒皮各种网红八卦、电竞圈内幕、娱乐圈秘闻等精彩猛料。">
+    <meta name="keywords" content="吃瓜网,黑料社,每日爆料,网红八卦,圈内内幕,热门爆料,吃瓜不打烊">
+    <link rel="canonical" href="/">
+    <link rel="stylesheet" href="static/css/style.css?v=20240315">
+    <script type="text/javascript" src="static/js/tz.js"></script>
+    <style>
+        /* 增加更适合吃瓜站的暗红及警示警戒风格 */
+        :root {
+            --primary: #d90429;
+            --primary-dark: #ef233c;
+            --gradient: linear-gradient(145deg, #d90429, #8d0801);
+            --shadow: 0 10px 30px rgba(217, 4, 41, 0.15);
+        }
+        .temp_placeholder { display: none; }
+        .danger-blink {
+            animation: warning-flash 1.8s infinite;
+        }
+        @keyframes warning-flash {
+            0%, 100% { color: var(--primary); }
+            50% { color: #f77f00; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-area">
+                    <div class="logo-circle" style="background: var(--gradient);">瓜</div>
+                    <div class="logo-text">
+                        <h1>吃瓜网黑料社</h1>
+                        <span>每日爆料·吃瓜不停歇</span>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-item active">首页</a>
+                    <a href="video.html" class="nav-item">爆料视频</a>
+                    <a href="tv.html" class="nav-item">吃瓜TV</a>
+                    <a href="creator.html">爆料投稿</a>
+                    <a href="community.html" class="nav-item">吃瓜社区</a>
+                    <a href="tools.html">黑料工具</a>
+                    <a href="search.html" class="nav-item">爆料搜索</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 搜索区域 -->
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="搜索明星黑料、网红内幕、最新事件...">
+                <button onclick="handleSearch()">吃瓜搜索</button>
+            </div>
+            <div class="hot-searches">
+                <span class="hot-label">🔥 今日重点瓜：</span>
+                <div class="hot-tags">
+                    <a href="javascript:void(0)" onclick="quickSearch('某音百万网红崩塌')">某音百万网红</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('电竞战队语音流出')">战队麦克疯</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('高校表白墙反转')">表白墙反转</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('带货主播偷漏税')">带货翻车</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('海外豪门恩怨录')">豪门大瓜</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero区域 -->
+        <div class="hero-section" style="background: linear-gradient(135deg, #fff0f1 0%, #ffe3e5 100%);">
+            <div class="hero-content">
+                <span class="hero-badge" style="background: rgba(217, 4, 41, 0.1); color: var(--primary);">⚡ 全网一手猛料 绝对真实</span>
+                <h2>
+                    每日热点大瓜
+                    <span>足不出户 围观世间百态</span>
+                </h2>
+                <p>吃瓜网黑料社致力于为广大吃瓜群众提供最新鲜、最真实的前沿资讯。在这里，我们客观记录每一起引起社会广泛讨论的突发热点，深挖网红与公众人物背后不为人知的另一面。</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="number" style="color: var(--primary);">800w+</div>
+                        <div class="label">吃瓜群众</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number" style="color: var(--primary);">12w+</div>
+                        <div class="label">历史档案</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number" style="color: var(--primary);">24h</div>
+                        <div class="label">无休更料</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 热门视频模块 -->
+        <div class="section-header">
+            <h3 class="danger-blink">🔥 本周震撼大瓜</h3>
+            <a href="video.html" class="view-all" style="color: var(--primary);">查看全部爆料 →</a>
+        </div>
+        <div class="video-grid">
+            <article class="video-item" onclick="playVideo('某平台知名女主播线下榜一聚会事件', '爆料人-王叔')">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/id/20/400/225" alt="主播爆料封面" loading="lazy" onerror="this.src='https://picsum.photos/id/1/400/225'">
+                    <div class="play-overlay">
+                        <div class="play-icon" style="background: rgba(255, 255, 255, 0.95);"></div>
+                    </div>
+                    <span class="video-badge" style="background: var(--gradient);">网红八卦</span>
+                    <span class="video-duration">15:42</span>
+                </div>
+                <div class="video-info">
+                    <h4>某平台知名女主播与线下榜一私会 聊天记录流出</h4>
+                    <div class="video-meta">
+                        <div class="uploader">
+                            <img src="https://picsum.photos/id/64/32/32" alt="王叔头像">
+                            <span>爆料人-王叔</span>
+                        </div>
+                        <span>45.2w次吃瓜</span>
+                    </div>
+                </div>
+            </article>
+            <article class="video-item" onclick="playVideo('某著名电竞俱乐部教练训话录音泄露', '电竞百晓生')">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/id/104/400/225" alt="电竞内幕封面" loading="lazy">
+                    <div class="play-overlay">
+                        <div class="play-icon"></div>
+                    </div>
+                    <span class="video-badge" style="background: var(--gradient);">电竞内幕</span>
+                    <span class="video-duration">09:12</span>
+                </div>
+                <div class="video-info">
+                    <h4>著名电竞战队基地内讧 选手与管理层对峙语音录音</h4>
+                    <div class="video-meta">
+                        <div class="uploader">
+                            <img src="https://picsum.photos/id/27/32/32" alt="百晓生头像">
+                            <span>电竞百晓生</span>
+                        </div>
+                        <span>32.8w次吃瓜</span>
+                    </div>
+                </div>
+            </article>
+            <article class="video-item" onclick="playVideo('知名带货网红选品实验室内部实拍', '正义使者')">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/id/26/400/225" alt="带货翻车封面" loading="lazy">
+                    <div class="play-overlay">
+                        <div class="play-icon"></div>
+                    </div>
+                    <span class="video-badge" style="background: var(--gradient);">行业打假</span>
+                    <span class="video-duration">22:15</span>
+                </div>
+                <div class="video-info">
+                    <h4>百万带货主播选品涉嫌虚假宣传 内部质检流程实拍曝光</h4>
+                    <div class="video-meta">
+                        <div class="uploader">
+                            <img src="https://picsum.photos/id/29/32/32" alt="正义头像">
+                            <span>正义使者</span>
+                        </div>
+                        <span>28.1w次吃瓜</span>
+                    </div>
+                </div>
+            </article>
+            <article class="video-item" onclick="playVideo('高校外卖风波真相还原', '知情人士')">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/id/127/400/225" alt="外卖内幕封面" loading="lazy">
+                    <div class="play-overlay">
+                        <div class="play-icon"></div>
+                    </div>
+                    <span class="video-badge" style="background: var(--gradient);">校园反转</span>
+                    <span class="video-duration">11:05</span>
+                </div>
+                <div class="video-info">
+                    <h4>某大学外卖小哥与保安冲突事件现场实录 监控画面的真相</h4>
+                    <div class="video-meta">
+                        <div class="uploader">
+                            <img src="https://picsum.photos/id/30/32/32" alt="知情人头像">
+                            <span>知情人士</span>
+                        </div>
+                        <span>18.9w次吃瓜</span>
+                    </div>
+                </div>
+            </article>
+            <article class="video-item" onclick="playVideo('某科技高管私人宴会对话', '匿名深喉')">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/id/96/400/225" alt="高管宴会封面" loading="lazy">
+                    <div class="play-overlay">
+                        <div class="play-icon"></div>
+                    </div>
+                    <span class="video-badge" style="background: var(--gradient);">金融商战</span>
+                    <span class="video-duration">04:30</span>
+                </div>
+                <div class="video-info">
+                    <h4>某创业独角兽公司合并内幕 创始人私人宴会醉酒真言</h4>
+                    <div class="video-meta">
+                        <div class="uploader">
+                            <img src="https://picsum.photos/id/55/32/32" alt="深喉头像">
+                            <span>匿名深喉</span>
+                        </div>
+                        <span>25.4w次吃瓜</span>
+                    </div>
+                </div>
+            </article>
+            <article class="video-item" onclick="playVideo('网红夫妻档互撕背后隐秘', '圈内观察员')">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/id/169/400/225" alt="夫妻档爆料封面" loading="lazy">
+                    <div class="play-overlay">
+                        <div class="play-icon"></div>
+                    </div>
+                    <span class="video-badge" style="background: var(--gradient);">情感恩怨</span>
+                    <span class="video-duration">18:50</span>
+                </div>
+                <div class="video-info">
+                    <h4>知名千万粉丝夫妻博主协议离婚 财产分割与小作文内情</h4>
+                    <div class="video-meta">
+                        <div class="uploader">
+                            <img src="https://picsum.photos/id/42/32/32" alt="观察员头像">
+                            <span>圈内观察员</span>
+                        </div>
+                        <span>51.6w次吃瓜</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 分类区域 -->
+        <div class="categories">
+            <div class="section-header">
+                <h3>📺 爆料板块细分</h3>
+                <a href="javascript:void(0)" class="view-all" onclick="showAllCategories()" style="color: var(--primary);">全部分类 →</a>
+            </div>
+            <div class="category-grid">
+                <div class="category-item" onclick="filterByCategory('娱乐八卦')">
+                    <div class="category-icon">🎭</div>
+                    <h4>娱乐圈秘闻</h4>
+                    <span>3.2w+热帖</span>
+                </div>
+                <div class="category-item" onclick="filterByCategory('网红瓜田')">
+                    <div class="category-icon">📱</div>
+                    <h4>网红大瓜</h4>
+                    <span>5.5w+热帖</span>
+                </div>
+                <div class="category-item" onclick="filterByCategory('电竞圈')">
+                    <div class="category-icon">🎮</div>
+                    <h4>电竞内幕</h4>
+                    <span>1.8w+热帖</span>
+                </div>
+                <div class="category-item" onclick="filterByCategory('街头爆料')">
+                    <div class="category-icon">📸</div>
+                    <h4>街头爆料</h4>
+                    <span>2.1w+热帖</span>
+                </div>
+                <div class="category-item" onclick="filterByCategory('金融商战')">
+                    <div class="category-icon">👔</div>
+                    <h4>商业奇闻</h4>
+                    <span>9k+热帖</span>
+                </div>
+                <div class="category-item" onclick="filterByCategory('校园风波')">
+                    <div class="category-icon">🏫</div>
+                    <h4>校园生活</h4>
+                    <span>1.5w+热帖</span>
+                </div>
+                <div class="category-item" onclick="filterByCategory('海外秘辛')">
+                    <div class="category-icon">🌎</div>
+                    <h4>海外猎奇</h4>
+                    <span>8k+热帖</span>
+                </div>
+                <div class="category-item" onclick="filterByCategory('社会民生')">
+                    <div class="category-icon">⚖️</div>
+                    <h4>法网恢恢</h4>
+                    <span>1.1w+热帖</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 排行榜区域 -->
+        <div class="rankings">
+            <div class="rankings-grid">
+                <div class="rank-card">
+                    <div class="rank-header">
+                        <div class="rank-icon" style="background: var(--gradient);">🏆</div>
+                        <h4>本周黑料大排档</h4>
+                    </div>
+                    <ul class="rank-list">
+                        <li onclick="playVideo('网红顶流涉嫌诱导未成年消费证据曝光', '黑客小哥')">
+                            <span class="rank-num">1</span>
+                            <div class="rank-info">
+                                <div class="rank-title">网红顶流涉嫌诱导未成年人巨额消费</div>
+                                <div class="rank-stats">228.4w热度</div>
+                            </div>
+                        </li>
+                        <li onclick="playVideo('知名带货食品工厂卫生环境堪忧实录', '食品卫士')">
+                            <span class="rank-num">2</span>
+                            <div class="rank-info">
+                                <div class="rank-title">千万级主播带货红薯粉丝涉假及作坊实录</div>
+                                <div class="rank-stats">185.3w热度</div>
+                            </div>
+                        </li>
+                        <li onclick="playVideo('知名男团成员地下恋情曝光 粉丝集体脱粉', '第一狗仔')">
+                            <span class="rank-num">3</span>
+                            <div class="rank-info">
+                                <div class="rank-title">新生代男团主唱地下恋情 现场搂抱视频</div>
+                                <div class="rank-stats">154.2w热度</div>
+                            </div>
+                        </li>
+                        <li onclick="playVideo('某省会知名夜市天价海鲜加工店停业整顿始末', '正义铁拳')">
+                            <span class="rank-num">4</span>
+                            <div class="rank-info">
+                                <div class="rank-title">天价加工费海鲜档口被联合执法查封始末</div>
+                                <div class="rank-stats">122.9w热度</div>
+                            </div>
+                        </li>
+                        <li onclick="playVideo('女高管辱骂员工录音完整版放出', '职场维权')">
+                            <span class="rank-num">5</span>
+                            <div class="rank-info">
+                                <div class="rank-title">知名车企女高管无故裁员粗暴辱骂录音曝光</div>
+                                <div class="rank-stats">98.5w热度</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rank-card">
+                    <div class="rank-header">
+                        <div class="rank-icon" style="background: var(--gradient);">🔥</div>
+                        <h4>深喉爆料人榜</h4>
+                    </div>
+                    <ul class="rank-list">
+                        <li onclick="visitCreator('爆料人-王叔')">
+                            <span class="rank-num">1</span>
+                            <div class="rank-info">
+                                <div class="rank-title">爆料人-王叔</div>
+                                <div class="rank-stats">线索提供 540次</div>
+                            </div>
+                        </li>
+                        <li onclick="visitCreator('第一狗仔')">
+                            <span class="rank-num">2</span>
+                            <div class="rank-info">
+                                <div class="rank-title">第一狗仔</div>
+                                <div class="rank-stats">爆料准确率 98%</div>
+                            </div>
+                        </li>
+                        <li onclick="visitCreator('匿名深喉')">
+                            <span class="rank-num">3</span>
+                            <div class="rank-info">
+                                <div class="rank-title">匿名深喉</div>
+                                <div class="rank-stats">真实内幕提供 124次</div>
+                            </div>
+                        </li>
+                        <li onclick="visitCreator('电竞百晓生')">
+                            <span class="rank-num">4</span>
+                            <div class="rank-info">
+                                <div class="rank-title">电竞百晓生</div>
+                                <div class="rank-stats">职业爆料 89次</div>
+                            </div>
+                        </li>
+                        <li onclick="visitCreator('食品卫士')">
+                            <span class="rank-num">5</span>
+                            <div class="rank-info">
+                                <div class="rank-title">食品卫士</div>
+                                <div class="rank-stats">打假行动 45次</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rank-card">
+                    <div class="rank-header">
+                        <div class="rank-icon" style="background: var(--gradient);">⭐</div>
+                        <h4>今日吃瓜热词</h4>
+                    </div>
+                    <ul class="rank-list">
+                        <li onclick="quickSearch('录音实锤')">
+                            <span class="rank-num">1</span>
+                            <div class="rank-info">
+                                <div class="rank-title">录音实锤 / 聊天截图</div>
+                                <div class="rank-stats">搜索 48w+</div>
+                            </div>
+                        </li>
+                        <li onclick="quickSearch('反转大戏')">
+                            <span class="rank-num">2</span>
+                            <div class="rank-info">
+                                <div class="rank-title">剧情反转 再出猛料</div>
+                                <div class="rank-stats">搜索 35w+</div>
+                            </div>
+                        </li>
+                        <li onclick="quickSearch('网红退网')">
+                            <span class="rank-num">3</span>
+                            <div class="rank-info">
+                                <div class="rank-title">知名大网红宣布无限期退网</div>
+                                <div class="rank-stats">搜索 29w+</div>
+                            </div>
+                        </li>
+                        <li onclick="quickSearch('高校瓜墙')">
+                            <span class="rank-num">4</span>
+                            <div class="rank-info">
+                                <div class="rank-title">高校万能墙爆料热潮</div>
+                                <div class="rank-stats">搜索 22w+</div>
+                            </div>
+                        </li>
+                        <li onclick="quickSearch('带货虚假')">
+                            <span class="rank-num">5</span>
+                            <div class="rank-info">
+                                <div class="rank-title">带货打假第一线</div>
+                                <div class="rank-stats">搜索 17w+</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最新更新模块 -->
+        <div class="section-header">
+            <h3>🆕 最新爆料上架</h3>
+            <a href="video.html?sort=new" class="view-all" style="color: var(--primary);">更多最新爆料 →</a>
+        </div>
+        <div class="video-grid">
+            <article class="video-item" onclick="playVideo('某古风网红私生活混乱遭前女友实名爆料', '第一狗仔')">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/id/15/400/225" alt="古风网红曝光封面" loading="lazy">
+                    <div class="play-overlay">
+                        <div class="play-icon"></div>
+                    </div>
+                    <span class="video-badge" style="background: var(--gradient);">情感恩怨</span>
+                    <span class="video-duration">12:15</span>
+                </div>
+                <div class="video-info">
+                    <h4>某圈内古风国潮大博主私生活混乱 遭多名女当事人实名曝光</h4>
+                    <div class="video-meta">
+                        <div class="uploader">
+                            <img src="https://picsum.photos/id/64/32/32" alt="狗仔头像">
+                            <span>第一狗仔</span>
+                        </div>
+                        <span>刚刚更新</span>
+                    </div>
+                </div>
+            </article>
+            <article class="video-item" onclick="playVideo('知名女团选秀选手退赛内幕', '选秀内线')">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/id/103/400/225" alt="选秀曝光封面" loading="lazy">
+                    <div class="play-overlay">
+                        <div class="play-icon"></div>
+                    </div>
+                    <span class="video-badge" style="background: var(--gradient);">娱乐秘闻</span>
+                    <span class="video-duration">08:44</span>
+                </div>
+                <div class="video-info">
+                    <h4>女团选秀大热选手突然宣布因伤退赛？真实内情竟是解约谈崩</h4>
+                    <div class="video-meta">
+                        <div class="uploader">
+                            <img src="https://picsum.photos/id/27/32/32" alt="选秀内线头像">
+                            <span>选秀内线</span>
+                        </div>
+                        <span>1小时前</span>
+                    </div>
+                </div>
+            </article>
+            <article class="video-item" onclick="playVideo('知名吃播深夜假吃漏剪穿帮镜头', '反假吃斗士')">
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/id/42/400/225" alt="假吃穿帮封面" loading="lazy">
+                    <div class="play-overlay">
+                        <div class="play-icon"></div>
+                    </div>
+                    <span class="video-badge" style="background: var(--gradient);">吃播打假</span>
+                    <span class="video-duration">05:22</span>
+                </div>
+                <div class="video-info">
+                    <h4>知名大胃王吃播深夜直播事故 假吃吐掉垃圾桶画面忘删流出</h4>
+                    <div class="video-meta">
+                        <div class="uploader">
+                            <img src="https://picsum.photos/id/42/32/32" alt="打假斗士头像">
+                            <span>反假吃斗士</span>
+                        </div>
+                        <span>3小时前</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h4>吃瓜网黑料社</h4>
+                    <p>吃瓜网黑料社成立于2020年，是由民间热心爆料网友自发成立的网络前沿事件研究会。我们旨在理性看待网络纠纷，倡导网络文明，共同还原真相。</p>
+                    <div class="hot-tags" style="justify-content: flex-start; margin-top: 15px;">
+                        <a href="javascript:void(0)" onclick="quickSearch('黑料')" style="background: rgba(255,255,255,0.08); border-radius: 4px; padding: 4px 8px; color: #fff;">#每日爆料</a>
+                        <a href="javascript:void(0)" onclick="quickSearch('吃瓜')" style="background: rgba(255,255,255,0.08); border-radius: 4px; padding: 4px 8px; color: #fff;">#全网吃瓜</a>
+                        <a href="javascript:void(0)" onclick="quickSearch('内幕')" style="background: rgba(255,255,255,0.08); border-radius: 4px; padding: 4px 8px; color: #fff;">#真相还原</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h5>吃瓜导航</h5>
+                    <a href="javascript:void(0)" onclick="filterByCategory('娱乐爆料')">娱乐爆料</a>
+                    <a href="javascript:void(0)" onclick="filterByCategory('网红内幕')">网红内幕</a>
+                    <a href="javascript:void(0)" onclick="filterByCategory('电竞赛事内幕')">电竞赛事内幕</a>
+                    <a href="javascript:void(0)" onclick="filterByCategory('行业黑料')">行业打假曝光</a>
+                </div>
+                <div class="footer-links">
+                    <h5>关于我们</h5>
+                    <a href="javascript:void(0)" onclick="location.href='about.html'">免责声明</a>
+                    <a href="javascript:void(0)" onclick="location.href='contact.html'">线索投递</a>
+                    <a href="javascript:void(0)" onclick="location.href='cooperation.html'">版权申诉</a>
+                    <a href="javascript:void(0)" onclick="location.href='feedback.html'">纠错指正</a>
+                </div>
+                <div class="footer-links">
+                    <h5>爆料中心</h5>
+                    <a href="javascript:void(0)" onclick="location.href='creator-guide.html'">保密须知</a>
+                    <a href="javascript:void(0)" onclick="location.href='growth-plan.html'">爆料奖励计划</a>
+                    <a href="javascript:void(0)" onclick="location.href='copyright.html'">法律维权声明</a>
+                    <a href="javascript:void(0)" onclick="location.href='help.html'">安全投递指南</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2020-<script>document.write(new Date().getFullYear())</script> 吃瓜网黑料社 ｜ 每日爆料跟新 ｜ 声明：本站内容均为民间网友自发上传，本站已对个人隐私信息尽到最大屏蔽义务。如有侵权，请通过版权申诉通道联系我们进行删除处理。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function handleSearch() {
+        var keyword = document.getElementById('searchInput').value.trim();
+        if (keyword) {
+            console.log('[爆料搜索] ' + keyword);
+            window.location.href = 'search.html?q=' + encodeURIComponent(keyword);
+        } else {
+            var inputEl = document.getElementById('searchInput');
+            inputEl.placeholder = '线索不能为空，请输入关键字～';
+            inputEl.style.borderColor = 'var(--primary)';
+            setTimeout(function() {
+                inputEl.style.borderColor = '';
+                inputEl.placeholder = '搜索明星黑料、网红内幕、最新事件...';
+            }, 1800);
+        }
+    }
+    
+    function quickSearch(tag) {
+        console.log('[标签搜索] ' + tag);
+        window.location.href = 'search.html?tag=' + encodeURIComponent(tag);
+    }
+    
+    function playVideo(title, author) {
+        console.log('[播放爆料音频/视频] 《' + title + '》 by ' + author);
+        window.location.href = 'video-detail.html?title=' + encodeURIComponent(title);
+    }
+    
+    function filterByCategory(category) {
+        console.log('[分类检索] ' + category);
+        window.location.href = 'video.html?category=' + encodeURIComponent(category);
+    }
+    
+    function showAllCategories() {
+        console.log('[查看全部大瓜分类]');
+        window.location.href = 'categories.html';
+    }
+    
+    function visitCreator(name) {
+        console.log('[查看爆料人履历] ' + name);
+        window.location.href = 'creator.html?uid=' + encodeURIComponent(name);
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('吃瓜网黑料社系统加载完毕 | ' + new Date().toLocaleString());
+    });
+    </script>
+</body>
+</html>
